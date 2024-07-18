@@ -13,18 +13,29 @@ const jsxheading = (
 );
 
 //React another  component
-const Title = () => (
-  <h1 className="head" tabIndex="5">
-    Namaste React using JSX.
-  </h1>
-);
+// const Title = () => (
+//   <h1 className="head" tabIndex="5">
+//     Namaste React using JSX.
+//   </h1>
+// );
+
+//old way of creating component.
+const Title = function () {
+  return (
+    <h1 className="head" tabIndex="5">
+      Namaste React using JSX.
+    </h1>
+  );
+};
 
 //React Functional Component
 //Here we learn how to render component into the another component.
 //Here Title is the component
+//react element render
 const CompHeading = () => (
   <div>
     <Title />
+    {jsxheading}
     <h1 className="heading">First react component</h1>
   </div>
 );
